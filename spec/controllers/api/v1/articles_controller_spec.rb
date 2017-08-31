@@ -4,8 +4,7 @@ RSpec.describe 'API::V1:ArticlesController', type: :controller do
 
   describe "POST #create" do
     before(:all) do
-
-
+      
     end
 
     context "with valid attributes" do
