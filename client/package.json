@@ -4,9 +4,11 @@
   "private": true,
   "proxy": "http://localhost:3001",
   "dependencies": {
+    "bootstrap": "^4.0.0-alpha.6",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
-    "react-scripts": "1.0.12"
+    "react-scripts": "1.0.12",
+    "reactstrap": "^4.8.0"
   },
   "scripts": {
     "start": "react-scripts start",
