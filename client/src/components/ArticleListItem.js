@@ -1,11 +1,11 @@
 import React from 'react';
 import { ListGroupItem, ListGroupItemHeading, ListGroupItemText } from 'reactstrap';
-import '../styles/Article.css';
+import '../styles/ArticleListItem.css';
 
 export default () => {
   return (
-    <div id="article-component">
-      <ListGroupItem active>
+    <div id="article-list-item">
+      <ListGroupItem>
         <ListGroupItemHeading>List group item heading</ListGroupItemHeading>
         <ListGroupItemText>
         Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.

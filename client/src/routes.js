@@ -1,19 +1,20 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-// import Provider from 'react-redux';
-// import { createStore } from 'react-redux';
+import { Provider } from 'react-redux';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import App from './components/App';
 import Home from './containers/Home';
+import store from './store';
 
 export default () => {
   return (
-    <BrowserRouter>
-      <Switch>
-        <App>
-          <Route path="/" component={Home}></Route>
-        </App>
-      </Switch>
-    </BrowserRouter>
+    <Provider store={store}>
+      <BrowserRouter>
+        <Switch>
+          <App>
+            <Route exact path="/" component={Home}></Route>
+          </App>
+        </Switch>
+      </BrowserRouter>
+    </Provider>
   )
 }

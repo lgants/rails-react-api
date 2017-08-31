@@ -1,11 +1,11 @@
 import React from 'react';
 import { ListGroup } from 'reactstrap';
-import Article from './Article';
+import ArticleListItem from './ArticleListItem';
 
 export default () => {
   return (
     <ListGroup>
-      <Article />
+      <ArticleListItem />
     </ListGroup>
   )
 }
