@@ -27,11 +27,11 @@ export function fetchArticles() {
   }
 }
 
-export function FetchArticlesSuccess(json) {
+export function FetchArticlesSuccess(articles) {
   console.log("ok");
   return {
     type: 'FETCH_ARTICLES_SUCCESS',
-    json
+    articles
   };
 }
 

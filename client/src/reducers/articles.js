@@ -14,7 +14,6 @@ export default function(state = initialState, action){
   switch (action.type){
     case FETCH_ARTICLES:
       return {
-        ...state,
         articles: [],
         status: {
           isFetching: true,
@@ -24,8 +23,7 @@ export default function(state = initialState, action){
       }
     case FETCH_ARTICLES_SUCCESS:
       return {
-        ...state,
-        articles: [action.articles],
+        articles: action.articles,
         status: {
           isFetching: false,
           hasErrored: false,
@@ -34,7 +32,6 @@ export default function(state = initialState, action){
       };
     case FETCH_ARTICLES_FAILURE:
       return {
-        ...state,
         articles: [],
         status: {
           isFetching: false,
