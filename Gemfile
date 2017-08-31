@@ -20,6 +20,8 @@ gem 'puma', '~> 3.0'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
+gem 'active_model_serializers'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
@@ -29,7 +31,8 @@ gem 'puma', '~> 3.0'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
-  gem 'rspec'
+  gem 'rspec-rails', '~> 3.6'
+  gem 'factory_girl_rails', '~> 4.5.0'
 end
 
 group :development do
@@ -40,6 +43,11 @@ group :development do
   gem 'foreman', '~> 0.82.0'
   gem 'pry'
   gem 'pry-rails'
+end
+
+group :test do
+  gem 'database_cleaner', '~> 1.5'
+  gem 'faker', '~> 1.6.1'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
